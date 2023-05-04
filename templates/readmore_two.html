@@ -1,0 +1,29 @@
+{% include 'base.html' %}
+{% block content %}
+<style>
+    .img{
+        width: 350px;
+        height: 500px;
+        padding-top: 100px;
+        margin-left: 150px;
+    }
+    .disc{
+      width: 500px;
+      margin-left: 650px;
+      margin-top: -400px;
+
+    }
+    
+</style>
+    <h2 class="text-center mt-4"> <b>{{data.title}}</b></h2>
+  <img src="{{data.image.url}}" alt="img" class="img"><br>
+  <div class="disc">
+  <p><b>{{data.Description}}</b></p> 
+</div>
+
+
+ 
+
+{% endblock %}
+
+ <hr>

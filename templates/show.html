@@ -1,0 +1,62 @@
+{% include 'base.html' %}
+
+{% block content %}
+<style>
+    .row{
+        margin-top: 50px;
+    }
+
+    .card1{
+        margin-top: 20px;
+
+    }
+
+    .conatiner{
+        margin-left: 80px;
+    }
+    .dis {
+    display: flex;
+}
+
+</style>
+
+
+
+<div class="conatiner">
+    <div class="row">
+        <h3>SELECT YOUR IPHONE/ IPADS/ LAPTOP AND GAMING CONSOLE ,SALE & SERVICES.</h3>
+
+        {% for i in data %}
+        {% if i.permission == True %}
+        <div class="col-lg-4 card1">
+            <div class="card" style="width: 18rem;">
+                <a href="{% url 'readmore' i.id %}"><img src="{{i.image.url}}" class="card-img-top" alt="..."></a>
+                <div class="card-body">
+                  <h5 class="card-title">{{i.title}}</h5>
+                  <p class="card-text"></p>
+                  <h6><b> Sale price: - ₹ {{i.discounted_price}}</b></h6>
+                  <div class="dis">
+
+                      <h6 style="color: grey;">Orignal Price:- ₹ <s>{{i.price}}</s>&nbsp;&nbsp;&nbsp;&nbsp;<h6 style="color:green">5% off</h6></h6>
+                    </div>
+                  <a href="{% url 'readmore' i.id %}" style="color: red;">Readmore </a>
+                  
+                  
+                </div>
+              </div>
+        
+
+            </div>
+        {% endif %}
+        {% endfor %}
+
+      
+    </div>
+    
+</div>
+
+
+
+{% endblock %}
+
+<hr>

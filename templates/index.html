@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+ .ok {
+  margin-top: 5px;
+  text-align: center;
+  padding: 3px;
+  background-color:lightsteelblue;
+  color: black;
+}
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark" style=" height: 50px;">
+        <div class="container">
+            <a class="navbar-brand" href="/login">
+                <i class="fa fa-home" style="font-size:35px;color:white"></i></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/login" style="color: white;">Login</a>
+                    </li>
+                    <hr class="dropdown-divider">
+                </ul>
+                </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+    {% include 'carou.html' %}
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+
+
+</body>
+<div class="card text-center ok " >
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Welcome To Mobile Shop.</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="/home" class="btn btn-outline-primary">Home</a>
+        <a href="/contact" class="btn btn-outline-success">Contact Us</a> 
+        <a href="/profile" class="btn btn-outline-primary">Profile</a>
+        <a href="/form" class="btn btn-outline-secondary"> Add Items</a>
+        <a href="/logout" class="btn btn-outline-danger">Logout</a> <br> <br>
+        <a href="#"><i class="fa fa-instagram" style="font-size:48px;color:red"></i></a>
+        <a href="#"><i class="fa fa-twitter" style="font-size:48px;color:black"></i></a>
+        <a href="#"><i class="fa fa-facebook-f" style="font-size:48px;color:blue"></i></a>
+        <a href="#"><i class="fa fa-linkedin-square" style="font-size:48px;color:hotpink"></i></a>
+    </div>
+    <div class="card-footer text-body-secondary">
+        2 days ago
+    </div>
+    
+</div>
+
+</html>

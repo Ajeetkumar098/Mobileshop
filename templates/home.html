@@ -1,0 +1,83 @@
+{% include 'base.html' %}
+{% include 'carou.html' %}
+{% load static %}
+
+{% block content %}
+
+<style>
+   
+    .ok {
+        margin-top: 5px;
+        text-align: center;
+        padding: 3px;
+        background-color: lavender;
+        color: black;
+    }
+    </style>
+        
+    <center><br>
+        <h2 style="color: red">Devices & Brands We Repair</h2><br>
+    </center>
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-lg-3">
+            <a href="/service/mobile"><img src="https://res.cloudinary.com/dw3oc9xrx/image/upload/v1682949122/tpuolujsdbd3gnlfgsaz.jpg" alt="" style="height: 290px;">
+                <h5 style="color: red;">Mobile Phone Repairs</h5>
+            </a>
+            <button type="button" class="btn btn-info">Book Now</button>
+
+        </div>
+
+        <div class="col-lg-3">
+            <a href="/service/tablet"> <img
+                    src="https://res.cloudinary.com/dw3oc9xrx/image/upload/v1682998496/Samsung-Galaxy-Tab-S2-8.0-e1619113624636_cyn3wh.jpg"
+                    alt="" style="height: 290px;">
+                <h5 style="color: red;">Tablet Repairs</h5>
+            </a>
+            <button type="button" class="btn btn-info">Book Now</button>
+
+        </div>
+        <div class="col-lg-3">
+            <a href="/service/laptop"><img src="https://res.cloudinary.com/dw3oc9xrx/image/upload/v1682666050/jjoaenabmph2w69c5kqq.jpg" alt="" style="height: 290px;">
+                <h5 style="color: red;">Laptop Repairs</h5>
+            </a>
+            <button type="button" class="btn btn-info">Book Now</button>
+
+        </div>
+
+        <div class="col-lg-3">
+            <a href="/service/game"><img src="https://res.cloudinary.com/dw3oc9xrx/image/upload/v1682665556/sfrpcuhf4ryaxlmnqswu.png" alt="" style="height: 290px;">
+                <h5 style="color: red;">Game Console Repairs</h5>
+            </a>
+            <button type="button" class="btn btn-info">Book Now</button>
+
+        </div>
+    </div>
+</div>
+{% endblock %} <br> <br>
+<center>
+<button type="button" class="btn btn-dark" style="font-size: x-large;"> Get 10% Off On All Repairs When Booked Online</button>
+</center>
+
+<div class="card text-center ok ">
+    <div class="card-header">
+        Featured
+    </div>
+    <div class="card-body">
+        <h5 class="card-title">Welcome To Mobile Shop.</h5>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="/home" class="btn btn-outline-primary">Home</a> 
+        <a href="/contact" class="btn btn-outline-info"> Contact Us</a> 
+        <a href="/profile" class="btn btn-outline-success"> Profile</a>
+        <a href="/form" class="btn btn-outline-secondary"> Add Items</a>
+        <a href="/logout" class="btn btn-outline-danger"> Logout</a> <br> <br>
+        <a href="#"><i class="fa fa-instagram" style="font-size:48px;color:red"></i></a>
+        <a href="#"><i class="fa fa-twitter" style="font-size:48px;color:black"></i></a>
+        <a href="#"><i class="fa fa-facebook-f" style="font-size:48px;color:blue"></i></a>
+        <a href="#"><i class="fa fa-linkedin-square" style="font-size:48px;color:hotpink"></i></a>
+    </div>
+    <div class="card-footer text-body-secondary">
+        2 days ago
+    </div>
+    
+</div>

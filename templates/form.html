@@ -1,0 +1,32 @@
+{% include 'base.html' %}
+{% block content %}
+
+
+ <html>
+    <body style="background-color: lightsteelblue">
+        
+   
+<form action="" method="post" enctype="multipart/form-data">
+     <center>
+<h1><b><u>Add Items</u></b></h1> <br>
+    {% csrf_token %}
+    {% for i in data %}
+    <div id="{{i.label}}">
+        {{i.label}}
+        {{i}}
+        <br>
+        <br>
+    </div>
+    {% endfor %}
+
+    <button type="submit" class="btn btn-outline-primary">SUbmit</button>
+    </center>
+</form>
+
+<script>
+    document.getElementById('Permission').style.display='none'
+</script>
+{% endblock %}
+
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mobile Shop</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        .ab{
+            height: 40px;
+        }
+        
+    </style>
+        
+</head>
+
+<body style="background-color: lightsteelblue;">
+
+
+    <nav class="navbar navbar-expand-lg bg-dark" style="height: 50px;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/home">
+
+                <i class="fa fa-home" style="font-size:35px;color:white"></i></a>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/home" style="color: white;">Home</a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: white;">
+                            Apple Phone
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/types/iphone">iPhone</a></li>
+                            <li><a class="dropdown-item" href="/types/apple watch">Apple Watch </a></li>
+                            <li><a class="dropdown-item" href="/types/ipads">iPads</a></li>
+                            <li>
+
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: white;">
+                            Samsung Phone
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/types/s series">S Series</a></li>
+                            <li><a class="dropdown-item" href="/types/note series">Note Series</a></li>
+                            <li><a class="dropdown-item" href="/types/a series">A Series</a></li>
+                            <li>
+
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: white;">
+                            Others Phone
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/types/oneplus">OnePlus </a></li>
+                            <li><a class="dropdown-item" href="/types/oppo">Oppo </a></li>
+                            <li><a class="dropdown-item" href="/types/xiaomi">Xiaomi </a></li>
+                            <li><a class="dropdown-item" href="/types/realme">Realme </a></li>
+                            <li><a class="dropdown-item" href="/types/vivo">Vivo </a></li>
+                            <li><a class="dropdown-item" href="/types/huawei">Huawei </a></li>
+                            <li><a class="dropdown-item" href="/types/motorola">Motorola </a></li>
+                             <li>
+
+                        </ul>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: white;">
+                            Buy Phones
+                        </a>
+                        <ul class="dropdown-menu ">
+                            <li><a class="dropdown-item" href="/types/apple iphones">Apple iphones</a></li>
+                            <li><a class="dropdown-item" href="/types/samsung galaxy">Samsung Galaxy</a></li>
+                            <li><a class="dropdown-item" href="/types/apple ipads">Apple iPads</a></li>
+                            <li><a class="dropdown-item" href="/types/doro phone">Doro Phone</a></li>
+                        </ul>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false" style="color: white;">
+                            Laptops
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="/types/hp">Hp</a></li>
+                            <li><a class="dropdown-item" href="/types/mac">Mac</a></li>
+                            <li><a class="dropdown-item" href="/types/acer">Acer</a></li>
+                            <li><a class="dropdown-item" href="/types/dell">Dell</a></li>
+                            <li><a class="dropdown-item" href="/types/sony">Sony</a></li>
+                            <li><a class="dropdown-item" href="/types/lenovo">Lenovo</a></li>
+
+                            <li>
+
+                        </ul>
+
+                    
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/contact" style="color: white;">Contact Us</a>
+                    </li>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/profile" style="color: white;">Profile</a>
+                    </li>
+                    </li>
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2 ab" type="search" placeholder="Search" aria-label="Search">
+
+               &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; <a href="/logout"><i class="fa fa-sign-out" style="font-size:30px;color:red"></i></a>
+
+                </form>
+            </div>
+        </div>
+    </nav>
+
+    {% block content %}
+    {% endblock %}
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
